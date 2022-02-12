@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Squid game </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.24.0/dist/phaser.min.js"></script>
+    <script type= "module" src="/game.js"></script>
+</head>
+<body>    
+    
+    <div class="menuOptions">        
+        <img src="./assets/Squid-Game-logo.png" alt="">
+          <button class="menuItem startButton">Start game</button>
+          <input class="menuItem startInput" type="number" placeholder="Počet hráčov: 1-10">
+          <input class="menuItem startInput" type="number" placeholder="Počet platforiem: 1-20">
+          <p class="menuItem warningMessage" id="errorMessage"></p>          
+    </div>
+
+    <div class="afterGameContent">
+            <div class="afterGameMessage afterGameItem">Vyhral si!</div>            
+            <button class="afterGameItem playAgainButton">Play again</button>                    
+    </div>
+    
+        <div class="desktop">
+            <button  class="desktopCloseBtn">X</button>            
+            <h2>Ako hrať?</h2>            
+            <ul>
+                <li>Na hracej plošine je vidieť, žlté guličky, ktoré predstavuju hráčov a modre štvorce, ktoré predstavujú platformi, po ktorých hráči budú prechádzať.</li>
+                <li>Hráči automaticky pôjdu v poradí od vrchu po spodok.</li>
+                <li>Pre to aby hráč mohol vkročiť na most stačí kliknúť na ešte neodhalenú platformu.</li>
+                <li>Hráči sa môžu pohybovať ľubovoľne sptätne na už odhalených platformách.</li>
+                <li>Ak nejaký hráč prehrá, tak ďaľší hráč nemôže prehrať, už na odhalených platformách. Po prehre hráča môžete kliknuť rovno zvýraznenú zelenú platformu aby sa hráč dostal rovno na najnovšie miesto.</li>
+                <li>Ked sa nejakému hráčovi podarí preskúmať celý most stačí mu kliknúť na poslednú zelenú platformu, kde pôjdu automaticky všetci hráči</li>
+            </ul>
+            <h2>Možnosť vsádzania</h2>
+            Aby hra bola záživnejšia, je pridaná aj možnosť vsádzania. Vsadíte si na daného hráča, že sa dostane na zelenú platformu.
+            <ul>
+                <li>Pre vsadenie na hráča stačí na hráča kliknúť, následne sa vám objaví kurz.</li>
+                <li>Potom zamierite do <img class="desktopInfoImg" src="./assets/betC.jpg" alt=""> kde sa vám automaticky načíta názov hráča, na ktorého ste klikli (jeho poradie)
+                vlozíte čiastku, ktorú chcete vsadiť a kliknete buttonn Vsadiť</li>
+                <li>Možnosť vsadenia na hráča je možná rovnocez zvolenie názvu hráča v spomínanom obrázku vyššie.</li>
+                <li>Ak máte dostatočný budget, tak ste úspešne stavili na to, že hráč sa dostane na zelenú platformu.</li>
+                <li>Teraz už je len potrebné postupovať podla návodu vyššie "Ako hrať?"</li>
+                <li>Po tom ako sa hra skončí vám napíše status správy výhry, ak ste na konci hry neboli v strate, v opačnom prípade prehry.</li>
+                <li>Svoj budget a celkový profit, možete jednoducho sleovať v: <img class="desktopInfoImg" src="./assets/status.jpg" alt=""></li>
+                <li>Ak by ste chceli vidieť kurzy všetkých hráčov, stači kliknúť na mierne skrytý button "Ukaž kurzy"</li>
+                <li>Hru môžete v ktoromkoľvek momente prerušit, tak, že kliknete na button "Back", ak však máte vsadené na nejakom hráčovi dostanete upozornenie a ak aj to potvrdíte prídete o všetky vsadené prostriedky. </li>
+                <li>Kurzy sa počas hry neustále menia a je možné vsadiť na, ktoréhokoľvek nevyradeného hráča v priebehu hry.</li>
+            </ul>
+         
+            
+        </div>
+        <div class="mobile">
+            <button  class="mobileCloseBtn">X</button> 
+            <h2>Ako hrať?</h2>            
+            <ul>
+                <li>Na hracej plošine je vidieť, žlté guličky, ktoré predstavuju hráčov a modre štvorce, ktoré predstavujú platformi, po ktorých hráči budú prechádzať.</li>
+                <li>Hráči automaticky pôjdu v poradí z ľava do prava.</li>
+                <li>Pre to aby hráč mohol vkročiť na most stačí kliknúť na ešte neodhalenú platformu.</li>
+                <li>Hráči sa môžu pohybovať ľubovoľne sptätne na už odhalených platformách.</li>
+                <li>Ak nejaký hráč prehrá, tak ďaľší hráč nemôže prehrať, už na odhalených platformách. Po prehre hráča môžete kliknuť rovno zvýraznenú zelenú platformu aby sa hráč dostal rovno na najnovšie miesto.</li>
+                <li>Ked sa nejakému hráčovi podarí preskúmať celý most stačí mu kliknúť na poslednú zelenú platformu, kde pôjdu automaticky všetci hráči</li>
+            </ul>
+            <h2>Možnosť vsádzania</h2>
+            Aby hra bola záživnejšia, je pridaná aj možnosť vsádzania. Vsadíte si na daného hráča, že sa dostane na zelenú platformu.
+            <ul>
+                <li>Pre vsadenie na hráča stačí na hráča kliknúť, následne sa vám objaví box s kurzom.</li>   
+                <li>Zadáte veľkosť stávky, ktorá nepresahuje váš budget a kliknete na tlačidlo "Vsadiť"</li>  
+                
+                <li>Ak máte dostatočný budget, tak ste úspešne stavili na to, že hráč sa dostane na zelenú platformu.</li>
+                <li>Teraz už je len potrebné postupovať podla návodu vyššie "Ako hrať?"</li>
+                <li>Po tom ako sa hra skončí vám napíše status správy výhry, ak ste na konci hry neboli v strate, v opačnom prípade prehry.</li>
+                <li>Svoj budget a celkový profit, možete jednoducho sleovať v: <img class="desktopInfoImg" src="./assets/status.jpg" alt=""></li>                
+                <li>Hru môžete v ktoromkoľvek momente prerušit, tak, že kliknete na button "Back", ak však máte vsadené na nejakom hráčovi dostanete upozornenie a ak aj to potvrdíte prídete o všetky vsadené prostriedky. </li>
+                <li>Kurzy sa počas hry neustále menia a je možné vsadiť na, ktoréhokoľvek nevyradeného hráča v priebehu hry.</li>
+            </ul>
+
+        </div>
+    
+    <div class="playground">
+        <div class="panelScore">
+            <button class="mainMenuBtn">Back</button>
+            <button class="showRatesBtn">Ukaž kurzy</button>
+            <div class="profileContent">
+                <div>Celkový počet hier: <span class="profileItem"></span> </div>
+                <div>Doterajší profit:  <span class="profileItem"></span> </div>
+                <div>Budget:  <span class="profileItem"></span> </div>
+                <div>Vsadené: <span class="profileItem">0</span></div>
+                <div>Možná výhra:  <span class="profileItem">0</span> </div>
+            </div>
+          <div class="infoContent"></div>
+        </div>
+       
+        <div class="gameArena">
+            <div class="startPlatform">
+                
+            </div>
+            
+            <div class="bridge">                             
+               
+            </div>
+            <div class="endPlatform">
+                
+
+            </div>
+            
+        </div>
+        
+        
+        <div class="betContent">
+            <button  class="closeBtn">X</button>
+            <div class="playerCurrent">                
+               
+            </div>
+            <select class="betInput betItem" name="players" id="playerName">
+                
+            </select>
+           
+            <input class="betInput betItem" type="number" placeholder="Velkosť stávky">
+           
+            <button class="betButton betItem">Vsadiť</button>
+        </div>
+        
+        
+    </div>
+
+    
+    
+</body>
+
+</html>
