@@ -10,7 +10,7 @@
 |Not many platforms|Many platforms|Bet system|
 |-------------|-------------|-------------|
 |![mb1](https://user-images.githubusercontent.com/78803735/152964335-121b1716-2452-41a9-bd34-b847ab620148.jpeg)|![mb2](https://user-images.githubusercontent.com/78803735/152964353-be0c81c0-a91e-4e62-9fd1-61a523000680.jpeg)|![mb3](https://user-images.githubusercontent.com/78803735/152964373-862e80d8-66e3-429f-8bea-782187feaa4e.PNG)
-|
+
 
 
 
