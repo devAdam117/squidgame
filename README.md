@@ -6,7 +6,7 @@
 |-------------|-------------|-------------|
 |![pc1](https://user-images.githubusercontent.com/78803735/152963436-cbf77184-a562-4bc9-ad59-22f035d55f7e.jpg)|![px2](https://user-images.githubusercontent.com/78803735/152963713-dc68023c-36f2-4b30-9438-48674945f2a1.jpg)|![pc3](https://user-images.githubusercontent.com/78803735/152963728-69aa511c-275d-4efd-a319-fdf7dcb9e2ba.jpg)|
 
-## How it looks on mobile
+## How it looks on mobile platforms
 |Not many platforms|Many platforms|Bet system|
 |-------------|-------------|-------------|
 |![mb1](https://user-images.githubusercontent.com/78803735/152964335-121b1716-2452-41a9-bd34-b847ab620148.jpeg)|![mb2](https://user-images.githubusercontent.com/78803735/152964353-be0c81c0-a91e-4e62-9fd1-61a523000680.jpeg)|![mb3](https://user-images.githubusercontent.com/78803735/152964373-862e80d8-66e3-429f-8bea-782187feaa4e.PNG)
@@ -36,7 +36,7 @@
 - Mozná výhra - Potentional win at current round *(d)
 - **(d) - dynamicaly changed after each bet or death of player
 - *(da) - dynamically changed after each game end
--
+
 
 
 
